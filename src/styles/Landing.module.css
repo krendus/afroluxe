@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Open+Sans:wght@400;500&display=swap');
+.navContainer {
+    background: white;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.subContainer {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLogo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.navLogo img {
+    height: 50px;
+    padding-right: 10px;
+}
+.navLogo span {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-family: 'Nanum Myeongjo', serif;
+}
+.navButton button {
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 25px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+.navButton button:nth-child(1) {
+    background: linear-gradient(0deg, var(--primary-color), var(--primary-color));
+    color: white;
+    margin-right: 15px;
+}
+.navButton button:nth-child(2) {
+    background: none;
+    border: 1px solid var(--primary-color);
+}
+.navButton button:nth-child(1):hover {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.navButton button:nth-child(2):hover {
+    background: linear-gradient(0deg, var(--primary-color), var(--primary-color));
+    color: white;
+}
+.landingSection {
+    background: url('../assets/LM.png'), rgba(0, 0, 12, 0.45);
+    background-blend-mode: overlay;
+    height: calc(100vh - 150px);
+    background-position: center;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    position: relative;
+    margin-top: 70px;
+}
+.landingSection h1 {
+    font-size: 50px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.formContainer {
+    position: absolute;
+    width: 60%;
+    min-width: 400px;
+    display: flex;
+    padding: 20px;
+    height: 120px;
+    background: #FFF;
+    bottom: -60px;
+    filter: drop-shadow(0px 16px 40px rgba(124, 125, 125, 0.15));
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.customInput {
+    border-radius: 4px;
+    border: 1px solid rgba(124, 124, 124, 0.6);
+    background: #FFF;
+    height: 40px;
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.customInput input {
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    padding: 0px 10px;
+    outline: none;
+    width: 100%;
+}
+.formContainer button {
+    height: 40px;
+    background: linear-gradient(0deg, var(--primary-color), var(--primary-color));
+    color: white;
+    padding: 0 30px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer
+}
+
+/* How it works section */
+
+.section2{
+    margin-top: 120px;
+    padding: 60px 7.5%;
+    background: #F6F4F4;
+}
+.section2 h2 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #242424;
+    font-size: 25px;
+}
+
+
+/* Cards */
+
+.customCard {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 16px 40px rgba(124, 125, 125, 0.15);
+    border-radius: 3px;
+    padding: 15px;
+    height: 250px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.customCard h3 {
+    font-size: 18px;
+    color: #242424;
+    padding: 10px 0;
+}
+.customCard p {
+    font-size: 14px;
+    color: #3a3a3a;
+}
+.customCard:nth-child(2) {
+    margin: 0 30px;
+}
+.cardContainer {
+    display: flex;
+    padding-top: 25px;
+}
+.imageCircle {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(160, 98, 51, 0.2);
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.imageCircle img {
+    height: 40px;
+}
+
+.section3 {
+    padding: 35px 0;
+}
+.section3 h2 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #242424;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.imageGrid {
+    display: flex;
+    height: 550px;
+    width: 55%;
+    margin: 0px auto;
+    padding-top: 20px;
+    min-width: 600px;
+}
+.imageGrid button {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family:'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.1s linear;
+}
+.imageGrid button:hover {
+    transform: scale(1.02);
+}
+.leftGrid {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    height: 100%;
+    margin-right: 5px;
+}
+.leftGrid button {
+    display: flex;
+}
+.leftGrid button:nth-child(1) {
+    flex: 55%;
+    background: url('../assets/B1.png'),  rgba(0, 0, 12, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-bottom: 5px
+}
+.leftGrid button:nth-child(2) {
+    flex: 45%;
+    background: url('../assets/B2.png'),  rgba(0, 0, 12, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-top: 5px;
+}
+.rightGrid {
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+    margin-left: 5px;
+}
+.topRightGrid {
+    flex: 45%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.topRightGrid button {
+    display: flex;
+    width: 100%;
+}
+.topRightGrid button:nth-child(1) {
+    background: url('../assets/B3.png'),  rgba(0, 0, 12, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-right: 5px;
+}
+.topRightGrid button:nth-child(2) {
+    background: url('../assets/B4.png'),  rgba(0, 0, 12, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-left: 5px;
+}
+
+.bottomRightGrid {
+    display: flex;
+    flex: 55%;
+    margin-top: 5px;
+}
+.bottomRightGrid button {
+    display: flex;
+    width: 100%;
+    background: url('../assets/B5.png'),  rgba(0, 0, 12, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.section4 {
+    display: flex;
+    height: 550px;
+    margin-top: 50px;
+    padding: 0 7.5%;
+}
+.leftGridSection4 {
+    position: relative;
+    flex: 50%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.leftGridSection4 div{
+    height: 70%;
+    top: 10%;
+    width: 30%;
+    left: 5%;
+    position: absolute;
+    background-color: var(--primary-color);
+}
+.leftGridSection4 img {
+    position: absolute;
+    height: 90%;
+    margin: 0 auto;
+}
+.rightGridSection4 h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    color: #242424;
+    font-size: 25px;
+    margin: 25px 0;
+}
+.rightGridSection4 p {
+    font-family: 'Open Sans', sans-serif;
+}
+.rightGridSection4 button {
+    background: var(--primary-color);
+    color: white;
+    height: 40px;
+    margin: 25px 0;
+    padding: 0 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.section5 {
+    padding: 55px 0;
+    background: #F6F4F4;
+}
+.section5 h2 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #242424;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.s5ButtonCont {
+    display: flex;
+    justify-content: right;
+    padding: 10px 7.5%;
+}
+.s5ButtonCont button {
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.reviewContainer {
+    display: flex;
+    padding: 20px 7.5%;
+    justify-content: space-between;
+}
+.reviewCard {
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 40px rgba(124, 125, 125, 0.15);
+    border-radius: 3px;
+    width: 45%;
+    color: #242424;
+}
+.reviewCard img {
+    display: block;
+    margin: 0 auto;
+}
+.reviewCard span {
+    display: block;
+    padding: 35px 0;
+    font-weight: 600;
+}
+.modalContainer {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 12, 0.3);
+    z-index: 99999999999;
+}
+.modal {
+    height: 300px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.modal button {
+    background: var(--primary-color);
+    color: #fff;
+    width: 70%;
+    border-radius: 4px;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border: 1px solid var(--primary-color);
+}
+.modal button:hover {
+    background: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.cancel {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}

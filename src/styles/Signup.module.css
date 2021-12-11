@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+}
+.aside, .aside2, .aside3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 40%;
+    width: 40%;
+}
+.aside {
+    background: url('../assets/bgs1.png');  
+    background-size: cover;
+}
+.aside2 {
+    background: url('../assets/bgs2.png');
+    background-size: cover;
+}
+.aside3 {
+    background: url('../assets/bgs3.png');
+    background-size: cover;
+}
+.formContainer {
+    flex: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.formContainer form {
+    width: 50%;
+}
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.logoContainer h3 {
+    font-size: 24px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.inputContainer label {
+    color: #242424;
+    padding: 5px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.inputContainer input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(124, 125, 125, 0.4);
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    outline: none;
+}
+.customInput {
+    display: flex;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(124, 125, 125, 0.4);
+    height: 40px;
+    border-radius: 3px;
+}
+.customInput input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.customInput button {
+    background: none;
+    width: 40px;
+    cursor: pointer;
+}
+.submitButton {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: #13181E;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 35px 0 10px 0;
+}
+.subText {
+    font-size: 13px;
+    text-align: center;
+}
+.subText a {
+    color: var(--active-color);
+}
+.forgotPass {
+    display: block;
+    text-align: right;
+    color: var(--active-color);
+    font-size: 13px;
+}

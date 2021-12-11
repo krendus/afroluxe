@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Open+Sans:wght@400;500&display=swap');
+
+
+.container {
+    background: #13181E;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.container h3 {
+    font-size: 16px;
+    padding: 3px 0;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+.container li {
+    list-style: none;
+    font-size: 13px;
+    padding: 4px 0;
+}
+.first {
+    display: flex;
+    padding: 20px 7.5%;
+}
+.logoSection {
+    flex: 17.5%;
+}
+.logoSection img{
+    height: 60px;
+}
+.logoSection p {
+    font-size: 24px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.logo {
+    text-align: center;
+    width: min-content;
+}
+.listSection {
+    flex: 17.5%;
+}
+.formSection form input{
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: white;
+    height: 40px;
+    padding: 0 10px;
+}
+.formSection form button {
+    border: none;
+    background: #8C4600;
+    color: white;
+    height: 40px;
+    padding: 0 15px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
+.formContainer {
+    padding: 15px 0;
+}
+.second {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+.third {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+}
